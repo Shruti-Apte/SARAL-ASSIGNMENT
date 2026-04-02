@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 import { StoreProvider } from '@/app/providers/store-provider'
 import { TooltipProvider } from '@/components/ui/tooltip'
 
-import App from './app'
+import App from './App.tsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
