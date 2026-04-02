@@ -25,7 +25,7 @@ export function LeftSidebar() {
           <span className="inline-flex size-7 items-center justify-center rounded-full bg-action-primary text-sm font-bold text-white">
             S
           </span>
-          <p className="text-sm font-semibold tracking-wide text-text-primary">SATHE</p>
+          <p className="text-sm font-semibold tracking-wide text-text-primary">SATHI</p>
         </div>
 
         <nav className="flex gap-2 overflow-x-auto pb-1 md:flex-col md:overflow-visible">
