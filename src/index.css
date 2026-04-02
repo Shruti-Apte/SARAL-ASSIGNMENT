@@ -8,38 +8,53 @@
 @layer base {
   :root {
     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
+    --background-primary: #ffffff;
+    --background-secondary: #fdeffd;
+    --background-tertiary: #fff5ff;
+    --text-primary: #303030;
+    --text-secondary: #616161;
+    --text-placeholder: #b5b5b5;
+    --text-brand: #561056;
+    --action-primary: #c530c5;
+    --action-primary-hover: #a72abb;
+    --action-disabled: #f68df6;
+    --border-primary: #ede3ef;
+    --border-dropdown: #e3e3e3;
+    --border-icon-frame: #fbcffb;
+    --status-danger: #ed4c5c;
+
+    --background: var(--background-primary);
+    --foreground: var(--text-primary);
+    --card: var(--background-primary);
+    --card-foreground: var(--text-primary);
+    --popover: var(--background-primary);
+    --popover-foreground: var(--text-primary);
+    --primary: var(--action-primary);
+    --primary-foreground: #ffffff;
+    --secondary: var(--background-tertiary);
+    --secondary-foreground: var(--text-primary);
+    --muted: var(--background-tertiary);
+    --muted-foreground: var(--text-secondary);
+    --accent: var(--background-tertiary);
+    --accent-foreground: var(--text-primary);
     --destructive: oklch(0.577 0.245 27.325);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.708 0 0);
+    --border: var(--border-primary);
+    --input: var(--border-primary);
+    --ring: var(--action-primary);
     --chart-1: oklch(0.87 0 0);
     --chart-2: oklch(0.556 0 0);
     --chart-3: oklch(0.439 0 0);
     --chart-4: oklch(0.371 0 0);
     --chart-5: oklch(0.269 0 0);
     --radius: 0.625rem;
-    --sidebar: oklch(0.985 0 0);
-    --sidebar-foreground: oklch(0.145 0 0);
-    --sidebar-primary: oklch(0.205 0 0);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.97 0 0);
-    --sidebar-accent-foreground: oklch(0.205 0 0);
-    --sidebar-border: oklch(0.922 0 0);
-    --sidebar-ring: oklch(0.708 0 0);
+    --sidebar: var(--background-secondary);
+    --sidebar-foreground: var(--text-primary);
+    --sidebar-primary: var(--action-primary);
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: var(--background-tertiary);
+    --sidebar-accent-foreground: var(--text-primary);
+    --sidebar-border: var(--border-primary);
+    --sidebar-ring: var(--action-primary);
   }
 
   body {
@@ -83,7 +98,7 @@
     --sidebar-ring: oklch(0.556 0 0);
   }
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
   }
   html {
     @apply font-sans;
